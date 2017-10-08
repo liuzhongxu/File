@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 定义一个ImageView，用于作为列表项的一部分。 -->
+    <ImageView
+        android:id="@+id/imageArray"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="261dp"
+        android:layout_height="match_parent">
+        <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000001"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:textSize="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/downloadBtn1"
+            android:text="下载"
+            android:background="#ffffff"
+            android:textColor="#030303"
+            android:layout_alignParentBottom="true" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:text="下载"
+            android:textColorLink="#ffffff"
+            android:autoLink="web"/>
+
+    </RelativeLayout>
+</LinearLayout>
